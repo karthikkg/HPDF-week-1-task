@@ -5,7 +5,7 @@
 ----------
 
 
-###Requirements
+### Requirements
 
 
 
@@ -17,7 +17,7 @@
 ----------
 
 
-###Installation Instructions
+### Installation Instructions
 Download python from https://www.python.org/downloads/release/python-363/ and install.
 Add path in enivironment varibles in windows System Settings as `C:\Python362\` and `C:\Python362\scripts`
 Downlad pip from https://bootstrap.pypa.io/get-pip.py and run the script.
