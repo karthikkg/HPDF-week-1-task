@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{% block title %} {% endblock %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="{{url_for('static',filename='css/normalize.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+        <script src="{{url_for('static',filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')}}"></script>
+    </head>
+    <body>
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">HPDF WEEK ONE TASKS</h1>
+
+                {%block nav%}
+                {% endblock %}
+                
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <article class="flashes">
+                    <section>
+                        {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            <ul style="background-color: #FFD6A3; list-style: none;margin-bottom: 1em;">
+                                {% for message in messages %}
+                                <li>{{message}}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                        {% endwith %}
+                    </section>
+                </article>
+                
+                    {%block content%}
+                    {% endblock %}
+                {%block sidebar%}
+                <aside>
+                    <h3>Week One Tasks</h3>
+                    <ul>
+                        <li><a href="{{url_for('task1')}}">Task 1</a></li>
+                        <li><a href="{{url_for('task2a')}}">Task 2a</a></li>
+                        <li><a href="{{url_for('task2b')}}">Task 2b</a></li>
+                        <li><a href="{{url_for('task2c')}}">Task 2c</a></li>
+                        <li><a href="{{url_for('task3')}}">Task 3</a></li>
+                        <li><a href="{{url_for('task4')}}">Task 4</a></li>
+                        <li><a href="{{url_for('task5')}}">Task 5</a></li>
+                        <li><a href="{{url_for('task6')}}">Task 6</a></li>
+                        <li><a href="{{url_for('task7')}}">Task 7</a></li>
+                    </ul>
+                </aside>
+                {% endblock %}
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{url_for('static',filename='js/vendor/jquery-1.11.2.min.js')}}"><\/script>')</script>
+
+        <script src="{{url_for('static',filename='js/main.js')}}"></script>
+    </body>
+</html>
