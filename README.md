@@ -19,7 +19,7 @@
 
 ### Installation Instructions
 Download python from https://www.python.org/downloads/release/python-363/ and install.
-Add path in enivironment varibles in windows System Settings as `C:\Python362\` and `C:\Python362\scripts`
+Add path in enivironment varibles in windows System Settings as `C:\Python363\` and `C:\Python363\scripts`
 Downlad pip from https://bootstrap.pypa.io/get-pip.py and run the script.
 
 Goto command prompt and run these commands
@@ -46,9 +46,10 @@ Create a folder and change Directory
  
 
     mkdir folder_name
+    cd folder_name
     setprojectdir .
 
-Now clone this Repository and run the application
+Now clone this Repository in this directory and run the application with this command in cmd
 
     python weekone.py
 
@@ -56,7 +57,7 @@ Now clone this Repository and run the application
 ----------
 
 
-Tasks:
+### Tasks:
 
 
 For execution access  urls in your browser.
