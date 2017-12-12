@@ -110,8 +110,9 @@ def task7():
 		name = form.name.data
 		email = form.email.data
 		store_input(name, email)
-		#logging the input to
+		#logging the input to stdout
 		app.logger.debug('Submitted Successfully :-)\nName: '+name +'\nEmail : '+ email)
+		print('Submitted Successfully :-)\nName: '+name +'\nEmail : '+ email)
 		flash('Submitted Successfully :-) Name: '+name +' | Email : '+ email)
 		return redirect(url_for('task6'))
 	return render_template('input.html',form = form)
