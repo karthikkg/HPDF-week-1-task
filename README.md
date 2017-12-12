@@ -19,8 +19,8 @@
 
 ### Installation Instructions
 Download python from https://www.python.org/downloads/release/python-363/ and install.
-Add path in enivironment varibles in windows System Settings as `C:\Python363\` and `C:\Python363\scripts`
-Downlad pip from https://bootstrap.pypa.io/get-pip.py and run the script.
+Add path in enivironment varibles in windows System Settings as `C:\Python363\` and `C:\Python363\scripts`.
+Download pip from https://bootstrap.pypa.io/get-pip.py and run the script.
 
 Goto command prompt and run these commands
 
@@ -60,7 +60,7 @@ Now clone this Repository in this directory and run the application with this co
 ### Tasks:
 
 
-For execution access  urls in your browser.
+For execution of tasks access the urls in your browser.
 
 1. A simple hello-world at http://localhost:8080/ that displays a simple string like "Hello World"
 
