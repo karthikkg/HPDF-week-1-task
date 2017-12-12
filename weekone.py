@@ -48,7 +48,7 @@ def task2b():
 	return render_template('posts.html',posts=posts)
 
 
-#Task 3: Return A list of authors and the count of their posts
+#Task 2.c: Return A list of authors and the count of their posts
 @app.route('/authors')
 def task2c():
 	authors,posts={},{}
@@ -96,7 +96,7 @@ def task5():
 def task6():
 	return render_template('html.html')
 
-
+# Task 7: A text box which sends data as POST to any endpoint and log the received to stdout.
 class InputForm(Form):
 	"""docstring for InputForm"""
 	name = StringField('name', validators = [DataRequired()])
@@ -122,6 +122,8 @@ def task7():
 def page_not_found(e):
 	return render_template('404.html'), 404
 
+
+# Custom Error Handler for Task 5:
 @app.errorhandler(401)
 def access_denied(e):
 	return render_template('401.html'), 401
