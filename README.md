@@ -77,7 +77,7 @@ For execution access  urls in your browser.
 
 	c. Respond with only a list of authors and the count of their posts (a newline for each author).
 
-		http://localhost:5000/posts
+		http://localhost:5000/authors
 
 3. Set a simple cookie (if it has not already been set) at http://localhost:8080/setcookie with the following values: name=<your-first-name> and age=<your-age>.
 
