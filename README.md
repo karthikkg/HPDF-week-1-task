@@ -10,8 +10,8 @@
 
 
 
- Python 3
- pip
+ Python 3,
+ pip, flask
 
 
 ----------
