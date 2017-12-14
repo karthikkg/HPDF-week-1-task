@@ -19,7 +19,7 @@
 
 ### Installation Instructions
 Download python from https://www.python.org/downloads/release/python-363/ and install.
-Add path in enivironment varibles in windows System Settings as `C:\Python363\` and `C:\Python363\scripts`.
+Add path in environment variables in windows System Settings as `C:\Python363\` and `C:\Python363\scripts`.
 Download pip from https://bootstrap.pypa.io/get-pip.py and run the script.
 
 Goto command prompt and run these commands
