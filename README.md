@@ -60,7 +60,7 @@ Now clone this Repository in this directory and run the application with this co
 ### Tasks:
 
 
-For execution of tasks access the urls in your browser.
+Get the output using the urls below.
 
 1. A simple hello-world at http://localhost:8080/ that displays a simple string like "Hello World"
 
